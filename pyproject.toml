@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secretcheck"
+version = "0.1.0"
+description = "Local secret scanner for developers."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "SecretCheck" }]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.setuptools]
+packages = ["secretcheck"]
